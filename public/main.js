@@ -227,8 +227,23 @@ $('#selectSort').change(function(){
     
 })
 
+function compareCity(a,b)
+    {
+        if (a.City>b.City)
+         return-1
+         if (a.City<b.City)
+         return 1
+         return 0
+    }
 
-
+    function compareCelsius(a,b)
+    {
+        if (a.Celsius>b.Celsius)
+         return-1
+         if (a.Celsius<b.Celsius)
+         return 1
+         return 0
+    }
 ///----------------------------------------------------------
 // postWeather=[{
 //     City:citytxt,
