@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    
+    <title>Weather chat</title>
+</head>
+<body>
+     <div class="container" id="myPage">
+            <img   class ="weatherImg"src="img/weather2.png" alt="">
+
+            <br> <br>
+            <div class="row  top_zoning">
+                   <div class=" col-3"><h2 id="MyTitle">Weather chat</h2></div>
+                   <div class=" col-2 ">
+                        <select class="form-control primary" id="selectSort">
+                                <option hidden selected value="0">  -בחר אופציה-  </option>
+                                <option value="City">City</option>
+                                <option value="Celsius">temperature</option>
+                            </select>
+                   </div>
+        
+            </div>
+
+
+
+
+           
+          
+           <br>
+        <form id="myForm"> 
+            <div class="row  input_zoning">
+                <input class="col-10"type="text" required placeholder="Enter city" id="citytxt">
+               <button type="submit" class=" col-2 btn btn-primary" id="get_temp">Get temp</button>
+            </div>
+        </form>
+        <p id="erroInput" style="display: none;">* No Result Check your input !!! </p>
+         <div id="weatherPost"><br><br></div>
+
+     </div>
+    
+
+    <!-- myScript -->
+    <script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
+
